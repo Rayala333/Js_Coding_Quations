@@ -113,3 +113,58 @@
 //     }
 // }
 // myfun("Aviva")
+
+
+//find the serise of numbers
+
+// let arr=[1,2,3,5,6,7,9,10,11,12,15,16]
+
+// function findConsecutiveSequence(arr) {
+//     const sequences = [];
+//     let sequence = [arr[0]];
+  
+//     for (let i = 1; i < arr.length; i++) {
+//       if (arr[i] === arr[i - 1] + 1) {
+//         sequence.push(arr[i]);
+//       } else {
+//         if (sequence.length > 1) {
+//           sequences.push(sequence);
+//         }
+//         sequence = [arr[i]];
+//       }
+//     }
+  
+//     if (sequence.length > 1) {
+//       sequences.push(sequence);
+//     }
+  
+//     return sequences;
+//   }
+  
+// //   const numbers = [1, 2, 3, 6, 7, 8, 10, 11];
+//   const consecutiveSequences = findConsecutiveSequence(arr);
+  
+//   console.log(consecutiveSequences);
+
+// Ex-2
+let arr=[1,2,3,5,6,7,9,10,11,12,15,16, 20]
+
+let newarray = []
+
+let sequence =[]
+
+for(i=0;i<=arr.length-1;i++){
+    if(arr[i]===arr[i+1]-1){
+        // newarray.push(arr[i])
+        newarray[newarray.length]=arr[i]
+    }else{
+        newarray.push(arr[i])
+        if(newarray.length>1){
+            // sequence.push(newarray)
+            sequence[sequence.length]=newarray
+        }
+        newarray=[]
+    }
+}
+
+console.log(sequence)
