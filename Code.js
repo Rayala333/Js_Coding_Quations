@@ -174,10 +174,12 @@
 //     let subarray=[]
 //     for(i=0;i<=arr.length;i++){ 
 //         if(e===arr[i]){
-//             subarray.push(arr[i])
+//             // subarray.push(arr[i])
+//             subarray[subarray.length]=arr[i]
 //         }
 //     }
-//     b.push(subarray)
+//     // b.push(subarray)
+//     b[b.length]=subarray
 // })
 // console.log(b)
 
@@ -317,6 +319,40 @@
 //     }
 // }
 // console.log(newarray)
+
+
+
+
+
+// let arr = [1,2,3,4,5,6]
+
+// let newarray = arr.reverse()
+
+// console.log(newarray[1])
+
+// for(i=arr.length-1;i>=0;i--){
+//     if(arr[i]===5){
+//         console.log(arr[i])
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

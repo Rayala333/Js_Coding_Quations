@@ -147,24 +147,90 @@
 //   console.log(consecutiveSequences);
 
 // Ex-2
-let arr=[1,2,3,5,6,7,9,10,11,12,15,16, 20]
+// let arr=[1,2,3,5,6,7,9,10,11,12,15,16,20,25,26,27]
 
-let newarray = []
+// let newarray = []
 
-let sequence =[]
+// let sequence =[]
 
-for(i=0;i<=arr.length-1;i++){
-    if(arr[i]===arr[i+1]-1){
-        // newarray.push(arr[i])
-        newarray[newarray.length]=arr[i]
-    }else{
-        newarray.push(arr[i])
-        if(newarray.length>1){
-            // sequence.push(newarray)
-            sequence[sequence.length]=newarray
-        }
-        newarray=[]
-    }
-}
+// for(i=0;i<=arr.length-1;i++){
+//     if(arr[i]===arr[i+1]-1){
+//         // newarray.push(arr[i])
+//         newarray[newarray.length]=arr[i]
+//     }else{
+//         newarray.push(arr[i])
+//         if(newarray.length>1){
+//             // sequence.push(newarray)
+//             sequence[sequence.length]=newarray
+//         }
+//         newarray=[]
+//     }
+// }
 
-console.log(sequence)
+// console.log(sequence)
+
+//promise's
+
+// let promise = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve("hi hello")
+//         reject('nodata')
+//     },1000)
+
+    
+// })
+
+
+// promise.then(
+//     (res)=>{
+//     console.log(res)},
+//     (err)=>{
+//         setTimeout(()=>{console.log(err,"err")},2000)
+        
+//     }
+    
+//     )
+
+
+// console.log({}=={})
+
+// function myfun(a){
+//     function New(b){
+//             console.log(a+b)
+//     }
+//     return New
+// }
+// myfun(2)(3)
+
+// let array = [2,3,5,2,4,6,4,7,3]
+
+// let newarray = [...new Set(array)]
+
+// console.log(newarray)
+
+// for(i=0;i<=newarray.length;i++){
+//    let count = 0
+//     for(j=0;j<=array.length;j++){
+//         if(array[j]===newarray[i]){
+//             count++
+//         }
+//     }
+//     console.log(count)
+// }
+
+
+
+
+
+///find average of number end with 3
+// let sum = 0;
+// let count = 0;
+
+// for (let i = 3; i < 100; i += 10) {
+//   sum += i;
+//   count++;
+// }
+
+// const average = sum / count;
+
+// console.log(average); 
