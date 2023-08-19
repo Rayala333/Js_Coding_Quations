@@ -222,7 +222,7 @@
 
 
 
-///find average of number end with 3
+///find average of number's up to 100 end with 3
 // let sum = 0;
 // let count = 0;
 
